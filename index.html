@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Programmer's flowers 🌹</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage">
+  <h1>Programmer's<br>flowers <span>🌹</span></h1>
+  <svg id="art" viewBox="0 0 1536 864" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="goldGlow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="pinkGlow" x="-70%" y="-70%" width="240%" height="240%">
+        <feGaussianBlur stdDeviation="9" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur stdDeviation="32"/>
+      </filter>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#fff5c9"/><stop offset=".25" stop-color="#f4d99b"/>
+        <stop offset=".55" stop-color="#fff1b8"/><stop offset="1" stop-color="#bd8b55"/>
+      </linearGradient>
+      <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#ffe6ae"/><stop offset=".55" stop-color="#bd8951"/><stop offset="1" stop-color="#6d4930"/>
+      </linearGradient>
+      <linearGradient id="petal" x1=".5" y1="1" x2=".5" y2="0">
+        <stop stop-color="#f7b6dc" stop-opacity=".96"/>
+        <stop offset=".48" stop-color="#f38fd1" stop-opacity=".84"/>
+        <stop offset="1" stop-color="#b84a9d" stop-opacity=".88"/>
+      </linearGradient>
+      <linearGradient id="petalLight" x1=".5" y1="1" x2=".5" y2="0">
+        <stop stop-color="#fff4fb" stop-opacity=".98"/>
+        <stop offset=".42" stop-color="#ffc8eb" stop-opacity=".9"/>
+        <stop offset="1" stop-color="#df68b5" stop-opacity=".8"/>
+      </linearGradient>
+      <radialGradient id="core">
+        <stop stop-color="#fffef1"/>
+        <stop offset=".25" stop-color="#fff5c9"/>
+        <stop offset=".65" stop-color="#ffcfe9" stop-opacity=".75"/>
+        <stop offset="1" stop-color="#f58bc7" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1536" height="864" fill="#020104"/>
+    <g id="stars"></g>
+    <g id="vines"></g>
+    <g id="leaves"></g>
+    <g id="flowerGlow"></g>
+    <g id="flower"></g>
+  </svg>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
